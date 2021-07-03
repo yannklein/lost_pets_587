@@ -1,0 +1,7 @@
+<%= simple_form_for pet do |f| %>
+  <%= f.input :name %>
+  <%= f.input :location %>
+  <%= f.input :lost_on, html5: true %>
+  <%= f.input :species, collection: Pet::SPECIES %>
+  <%= f.submit %>
+<% end %>

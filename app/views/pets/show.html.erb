@@ -7,5 +7,6 @@
       <p>Lost <%= @pet.lost_days_ago %> days ago.</p>
     </div>
   </div>
+  <%= link_to "Delete", pet_path(@pet), method: 'delete', data: { confirm: "Are you sure? 😿"}, class: "btn btn-warning" %>
   <%= link_to "Back", pets_path, class: "btn btn-primary" %>
 </div>
